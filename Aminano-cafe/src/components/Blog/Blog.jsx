@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import BlogItem from "../BlogItem/BlogItem";
 import "./Blog.css";
 import toast, { Toaster } from "react-hot-toast";
+import Bookmark from "../Bookmark/Bookmark";
 
 const Blog = () => {
 	const [blogs, setBlogs] = useState([]);
 	const [time, setTime] = useState([]);
-	// const [list, setList] = useState([]);
+	const [bookmark, setBookmark] = useState([]);
 
 	useEffect(() => {
 		fetch("blogs.json")
@@ -19,15 +20,14 @@ const Blog = () => {
 		setTime(newTime);
 	};
 
-	const bookmarked = [];
-
 	const handleBookmark = (blog) => {
-		if (bookmarked.includes(blog.id)) {
+		if (bookmark.includes(blog.id)) {
 			toast.error("This didn't work. Already bookmarked", {
 				duration: 2000,
 			});
 		} else {
-			bookmarked.push(blog.id);
+			const newBookmark = [...bookmark, blog.id];
+			setBookmark(newBookmark);
 		}
 	};
 
@@ -51,16 +51,10 @@ const Blog = () => {
 					</p>
 				</div>
 				<div className="bookmark-container">
-					<p className="record-header">
-						Bookmarked Blogs : {bookmarked.length}{" "}
-					</p>
+					<p className="record-header">Bookmarked Blogs : {bookmark.length} </p>
 					<div className="blog-container">
-						{bookmarked.map((id) => (
-							<BlogItem
-								key={blog.id}
-								blog={blog}
-								handleAddToList={handleAddToList}
-								handleBookmark={handleBookmark}></BlogItem>
+						{bookmark.map((id) => (
+							<Bookmark key={id}></Bookmark>
 						))}
 					</div>
 				</div>
