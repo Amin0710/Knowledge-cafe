@@ -31,3 +31,9 @@
 	margin-top: 0;
 	padding: 30px;
 }
+@media (max-width: 600px) {
+	.blog-list-container {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+}

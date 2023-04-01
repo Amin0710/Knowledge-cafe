@@ -35,3 +35,8 @@ a:hover {
 .icon:hover {
 	color: #646cff;
 }
+@media (max-width: 600px) {
+	.cover {
+		height: 200px;
+	}
+}
