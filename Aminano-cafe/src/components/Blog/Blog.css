@@ -1,0 +1,8 @@
+.blog-list-container {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+.blog-container {
+	margin: 50px;
+	gap: 45px;
+}

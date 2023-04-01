@@ -1,0 +1,21 @@
+.cover {
+	width: 845px;
+	height: 450px;
+	border-radius: 8px;
+}
+.author-info {
+	display: flex;
+}
+.author-info p {
+	margin: 0;
+	padding-left: 24px;
+}
+.read-info {
+	display: flex;
+	justify-content: space-between;
+}
+.gray-small {
+	font-size: 20px;
+	font-weight: 500;
+	color: #969696;
+}

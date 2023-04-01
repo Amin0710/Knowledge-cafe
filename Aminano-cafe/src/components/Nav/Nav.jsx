@@ -7,13 +7,13 @@ const Nav = () => {
 		<>
 			<div className="navContent">
 				<div>
-					<h2>Aminano Cafe</h2>
+					<p>Aminano Cafe</p>
 				</div>
 				<div>
-					<img src={nav} alt="" />
+					<img className="user" src={nav} alt="" />
 				</div>
 			</div>
-			<div style={{ border: "1px solid #E3E3E3" }}></div>
+			<div style={{ border: "1px solid #969696" }}></div>
 		</>
 	);
 };
