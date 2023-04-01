@@ -4,6 +4,7 @@
 }
 .blog-container {
 	margin: 30px;
+	margin-bottom: 0px;
 	gap: 45px;
 }
 .record-container {

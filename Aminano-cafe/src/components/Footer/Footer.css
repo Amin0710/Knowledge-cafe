@@ -1,0 +1,14 @@
+#allQA {
+	width: 100%;
+	margin-bottom: 15px;
+}
+.question {
+	color: #242424;
+	background-color: #e3e3e3;
+	border-radius: 8px;
+	margin: 15px 0;
+	font-size: 30px;
+}
+.answer {
+	font-size: 18px;
+}
