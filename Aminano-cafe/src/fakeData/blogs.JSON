@@ -1,0 +1,42 @@
+[
+	{
+		"id": "kacaKoduPakaLau1",
+		"coverImg": "https://searchengineland.com/wp-content/seloads/2022/06/seo-ai-1536x864.jpg",
+		"authorImg": "https://en.wikipedia.org/wiki/Elon_Musk#/media/File:Elon_Musk_Royal_Society_(crop2).jpg",
+		"authorName": "Elon Musk",
+		"title": "The Future of AI: How Machine Learning is Changing the Game",
+		"date": "March 15, 2023",
+		"tags": ["#AI", "#MachineLearning", "#FutureTech"],
+		"readTime": 8
+	},
+	{
+		"id": "kacaKoduPakaLau2",
+		"coverImg": "https://www.insiderintelligence.com/static/5ecb856d09def78da57ec3fac2f6ce5c/72c11/blockchain.webp",
+		"authorImg": "https://en.wikipedia.org/wiki/Jeff_Bezos#/media/File:Modified_Background_image_of_Jeff_Bezos,_taken_originally_by_U.S._Space_Force.png",
+		"authorName": "Jeff Bezos",
+		"title": "The Latest Advancements in Blockchain Technology: What You Need to Know",
+		"date": "January 28, 2023",
+		"tags": ["#Blockchain", "#Crypto", "#DigitalCurrency"],
+		"readTime": 7
+	},
+	{
+		"id": "kacaKoduPakaLau3",
+		"coverImg": "https://global.hitachi-solutions.com/wp-content/uploads/2020/12/enterprise-analytics.png",
+		"authorImg": "https://en.wikipedia.org/wiki/Bill_Gates#/media/File:Bill_Gates_2017_(cropped).jpg",
+		"authorName": "Bill Gates",
+		"title": "Breaking Down Big Data: Understanding the Power of Analytics",
+		"date": "November 5, 2022",
+		"tags": ["#BigData", "#DataAnalytics", "#BusinessIntelligence"],
+		"readTime": 5
+	},
+	{
+		"id": "kacaKoduPakaLau4",
+		"coverImg": "https://cdn.elearningindustry.com/wp-content/uploads/2021/04/lets-explore-how-ar-is-changing-elearning.png",
+		"authorImg": "https://en.wikipedia.org/wiki/Larry_Page#/media/File:Larry_Page_in_the_European_Parliament,_17.06.2009_(cropped).jpg",
+		"authorName": "Larry Page",
+		"title": "The Rise of Augmented Reality: How AR is Revolutionizing Industries",
+		"date": "August 19, 2022",
+		"tags": ["#AugmentedReality", "#AR", "#DigitalCVirtualRealityurrency"],
+		"readTime": 6
+	}
+]
