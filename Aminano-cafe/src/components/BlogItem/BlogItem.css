@@ -19,3 +19,13 @@
 	font-weight: 500;
 	color: #969696;
 }
+a {
+	font-size: 20px;
+	font-weight: 600;
+	color: #7a1da3;
+	text-decoration: underline;
+	cursor: pointer;
+}
+a:hover {
+	color: #646cff;
+}

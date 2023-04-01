@@ -3,6 +3,31 @@
 	grid-template-columns: 2fr 1fr;
 }
 .blog-container {
-	margin: 50px;
+	margin: 30px;
 	gap: 45px;
+}
+.record-container {
+	display: flex;
+	flex-direction: column;
+}
+.record-header {
+	font-size: 24px;
+}
+.time-container {
+	border: 1px solid #6047ec;
+	background: rgba(96, 71, 236, 0.1);
+	border-radius: 8px;
+	height: 80px;
+	color: #6047ec;
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bookmark-container {
+	background: #969696;
+	border-radius: 8px;
+	margin: 30px;
+	margin-top: 0;
+	padding: 30px;
 }

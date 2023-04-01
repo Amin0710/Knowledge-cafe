@@ -4,7 +4,7 @@ import "./Blog.css";
 
 const Blog = () => {
 	const [blogs, setBlogs] = useState([]);
-	// const [cart, setCart] = useState([]);
+	const [list, setList] = useState([]);
 
 	useEffect(() => {
 		fetch("blogs.json")
@@ -12,10 +12,11 @@ const Blog = () => {
 			.then((data) => setBlogs(data));
 	}, []);
 
-	// const handleAddToCart = (blog) => {
-	// 	const newCart = [...cart, blog];
-	// 	setCart(newCart);
-	// };
+	const handleAddToList = (blog) => {
+		const newList = [...list, blog];
+		setList(newList);
+	};
+
 	return (
 		<div className="blog-list-container">
 			<div className="blog-container">
@@ -23,13 +24,19 @@ const Blog = () => {
 					<BlogItem
 						key={blog.id}
 						blog={blog}
-						// handleAddToCart={handleAddToCart}
-					></BlogItem>
+						handleAddToList={handleAddToList}></BlogItem>
 				))}
 			</div>
-			<div className="list-container">
-				<h4>Order Summary</h4>
-				<p>Selected Items: </p>
+			<div className="record-container">
+				<div className="time-container">
+					<p className="record-header">
+						Spent time on read :{" "}
+						{list.map((l) => l.readTime).reduce((b, a) => b + a, 0)} min{" "}
+					</p>
+				</div>
+				<div className="bookmark-container">
+					<p className="record-header">Bookmarked Blogs : 8 </p>
+				</div>
 			</div>
 		</div>
 	);

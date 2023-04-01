@@ -4,6 +4,8 @@ import "./BlogItem.css";
 const BlogItem = (props) => {
 	const { coverImg, authorImg, authorName, title, date, tags, readTime } =
 		props.blog;
+	const handleAddToList = props.handleAddToList;
+
 	return (
 		<div className="blog">
 			<img className="cover" src={coverImg} alt="" />
@@ -20,10 +22,14 @@ const BlogItem = (props) => {
 				</div>
 				<p className="gray-small">{readTime} min read</p>
 			</div>
-			<p>{title}</p>
+			<p style={{ padding: "10px 0" }}>{title}</p>
 			<p className="gray-small">
 				{tags[0]} {tags[1]} {tags[2]}
 			</p>
+			<button onClick={() => handleAddToList(props.blog)} className="btn-cart">
+				Mark as read
+			</button>
+
 			<div style={{ border: "1px solid #969696", margin: "40px 0" }}></div>
 		</div>
 	);
