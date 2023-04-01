@@ -21,14 +21,13 @@ const Blog = () => {
 	};
 
 	const handleBookmark = (blog) => {
-		if (bookmark.includes(blog.id)) {
+		if (bookmark.some((b) => b.id === blog.id)) {
 			toast.error("This didn't work. Already bookmarked", {
-				duration: 2000,
+				duration: 1200,
 			});
-		} else {
-			const newBookmark = [...bookmark, blog.id];
-			setBookmark(newBookmark);
 		}
+		const newBookmark = [...bookmark, blog];
+		setBookmark(newBookmark);
 	};
 
 	return (
@@ -53,8 +52,8 @@ const Blog = () => {
 				<div className="bookmark-container">
 					<p className="record-header">Bookmarked Blogs : {bookmark.length} </p>
 					<div className="blog-container">
-						{bookmark.map((id) => (
-							<Bookmark key={id}></Bookmark>
+						{bookmark.map((blog) => (
+							<Bookmark key={blog.id} title={blog.title}></Bookmark>
 						))}
 					</div>
 				</div>
