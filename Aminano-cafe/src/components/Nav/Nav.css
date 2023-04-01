@@ -1,0 +1,15 @@
+h2 {
+	margin: 0;
+	font-weight: 700;
+	font-size: 40px;
+}
+.navContent {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+img {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}
